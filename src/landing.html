@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<!-- comments -->
+<html>
+    <head>
+        <title>Peculiar Shopaholic</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+        <style>
+            @import 'https://fonts.googleapis.com/css?family=Raleway:400,800';
+            @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+            @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+            @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+            @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=cyrillic,cyrillic-ext");
+
+        .wrap {
+            width: 100%;
+            height: 188px;
+            position: absolute;
+            top: -8px;
+            left: 8px;
+            overflow: hidden;
+        }
+        .wrap:before, .wrap:after {
+            content: "";
+            position: absolute;
+        }
+        .wrap:before {
+            width: 40px;
+            height: 8px;
+            right: 100px;
+            background: #4D6530;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .wrap:after {
+            width: 8px;
+            height: 40px;
+            right: 0px;
+            top: 100px;
+            background: #4D6530;
+            border-radius: 0px 8px 8px 0px;
+        }
+        .ribbon {
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            top: 30px;
+            right: -50px;
+            z-index: 2;
+            overflow: hidden;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border: 1px dashed;
+            box-shadow:0 0 0 3px #57DD43,  0px 21px 5px -18px rgba(0,0,0,0.6);
+            background: #57DD43;
+            text-align: center;
+        }
+
+
+        .b-slider {
+            /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); */
+            height: auto;
+            margin: 100px auto;
+            overflow: hidden;
+            width: 949px;
+            }
+        
+        .b-slider img {
+            max-width: 100%;
+        }
+        .b-slider-list {
+            font-size: 0;
+            white-space: nowrap;
+        }
+        .b-slider-item {
+            display: inline-block;
+            font-size: 20px;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.5s linear 0.2s;
+            white-space: normal;
+            width: 25%;
+        }
+     
+        .b-slider-content {
+            left: 350px;
+            min-width: 237px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        .b-slider-list:hover .b-slider-item {
+            width: 0;
+        }
+        .b-slider-list:hover .b-slider-item:hover {
+            width: 100%;
+        }
+        .b-slider-item img {
+            display: block;
+            position: absolute;
+            top: 0;
+            transition: all 0.5s linear 0.2s;
+        }
+        .b-slider-item:hover img {
+            transition-delay: 0.2s;
+        }
+        .b-slider.m-1 img {
+            left: 0;
+        }
+        .b-slider.m-2 img {
+            left: -235px;
+        }
+        .b-slider.m-2:hover img {
+            left: 0;
+        }
+        .b-slider.m-3 img {
+            left: -234px;
+        }
+        .b-slider.m-3:hover img {
+            left: 0;
+        }
+        .b-slider.m-4 img {
+           left: -400px;
+        }
+        .b-slider.m-4:hover img {
+            left: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="top" class="banner" role="banner">
+            <article>
+                <hgroup>
+                    <h2 class="logo">Keep It Simple</h2>
+                </hgroup>
+                    <p class="intro">Dat product subline is so nice it blows your mind. <a href="#">Order yours now!</a></p>
+                    <ul class="actions">
+                        <li><a href="#content" class="button">Sign Up</a></li>
+                        <li><a href="#elements" class="button">Learn More</a></li>
+                    </ul>
+            </article>
+        </header> <!-- Header End -->
+        <nav class="nav-wrapper"> 
+            <div class="row">    		            
+                <ul id="nav" class="nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="has-children"><a href="products.html">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>	
+                    <li class="has-children"><a href="blog.html">Blog</a></li>	
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> <!-- end nav -->			   	 
+            </div> 
+        </nav> <!-- end nav-wrap --> 	
+
+        <!-- Main -->
+        <section class="container-large" id="featured">
+            <div class="row container-small align_center">
+                  
+              <h2 class="align_center">Cats are so awesome.</h2>
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere temporibus omnis illum, officia. Architecto voluptatibus commodi voluptatem perspiciatis eos possimus, eius at molestias quaerat magnam? Odio qui quos ipsam natus.</p>
+  
+            </div>
+        
+            <article class="featured-row  align_center">
+  
+              <div class="featured-row_inner ">
+  
+                <div class="col-3 featured">
+                  <i class="fa fa-coffee fa-5x"></i>
+                  <p>
+                    Product so awesome. Super cheap deal!
+                  </p>
+                </div>
+  
+                <div class="col-3 featured">
+                  <i class="fa fa-coffee fa-5x"></i>
+                  <p>
+                    Makes you even greater - go buy now!
+                  </p>
+                </div>
+  
+                <div class="col-3 featured">
+                  <i class="fa fa-coffee fa-5x"></i>
+                  <p>
+                    Feel lonely? Go buy product and have a friend.
+                  </p>
+                </div>
+  
+              </div>
+            </article>
+          
+        </section>
+      
+            <section class="bg bg1">
+            
+            </section>
+
+
+        <section class="wrapper container-small">
+            <div class="row">
+                <div class="col-12 align_center">
+            <header>
+                <h3>Pricing table</h3>
+            </header>
+      
+            <article class="row pricing-table">
+                <div class="col-4 plan">
+                    <h3>Enterprise<span>$59</span></h3>
+                    <a class="signup" href="">Sign up</a>
+                    <ul>
+                        <li><b>10GB</b> Disk Space</li>
+                        <li><b>100GB</b> Monthly Bandwidth</li>
+                        <li><b>20</b> Email Accounts</li>
+                        <li><b>Unlimited</b> subdomains</li>
+                    </ul>
+                </div>
+                <div class="col-4 plan most-popular">
+                    <h3>Professional<span>$29</span></h3>
+                    <a class="signup" href="">Sign up</a>
+                    <ul>
+                        <li><b>5GB</b> Disk Space</li>
+                        <li><b>50GB</b> Monthly Bandwidth</li>
+                        <li><b>10</b> Email Accounts</li>
+                        <li><b>Unlimited</b> subdomains</li>
+                    </ul>
+                </div>
+                <div class="col-4 plan">
+                    <h3>Standard<span>$17</span></h3>
+                    <a class="signup" href="">Sign up</a>
+                    <ul>
+                        <li><b>3GB</b> Disk Space</li>
+                        <li><b>25GB</b> Monthly Bandwidth</li>
+                        <li><b>5</b> Email Accounts</li>
+                        <li><b>Unlimited</b> subdomains</li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        </article>
+        <div class="clear"></div>
+    </section>
+          
+          
+    <section class="bg bg2">
+            
+    </section>
+    
+    <section class="wrapper" id="to_right">
+        <article class="container-small">
+              <hgroup>
+                <h2>Lorem ipsum dolor sit amet</h2>
+              </hgroup>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img class="to_right" src="images/cat3.jpg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+    </section>
+
+    <section class="container-small" id="slider">
+    
+        <div class="b-slider">
+            <ul class="b-slider-list">
+              <li class="b-slider-item m-1"><img src="/images/cat1.jpg"/>
+                <div class="b-slider-content"><p class="intro">Dat product subline is so nice it blows your mind. <a href="#">Order yours now!</a></p></div>
+              </li>
+              <li class="b-slider-item m-2"><img src="/images/cat2.jpg"/>
+                <div class="b-slider-content"><p class="intro">Dat product subline is so nice it blows your mind. <a href="#">Order yours now!</a></p></div>
+              </li>
+              <li class="b-slider-item m-3"><img src="/images/cat3.jpg"/>
+                <div class="b-slider-content"><p class="intro">Dat product subline is so nice it blows your mind. <a href="#">Order yours now!</a></p></div>
+              </li>
+              <li class="b-slider-item m-4"><img src="/images/cat4.jpg"/>
+                <div class="b-slider-content"><p class="intro">Dat product subline is so nice it blows your mind. <a href="#">Order yours now!</a></p></div>
+              </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="bg bg3">
+          
+    </section>
+          
+    <section class="container-small" id="to_left">
+          
+        <article>
+              <hgroup>
+                <h2>Lorem ipsum dolor sit amet</h2>
+              </hgroup>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img class="to_left" src="images/cat1.jpg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+          
+    </section>
+          
+          
+    <section class="bg bg4">       
+    </section>
+   
+    <section class="wrapper container-small" id="gallery"
+        <div class="row">
+            <div class="col-12 align_center">
+                <header>
+                    <h3>Gallery</h3>
+                </header>
+                <div class="container">
+                    <ul class="grid caption-hover">
+                        <li>
+                            <figure>
+                                    <img src="images/04.jpg" alt="img04">
+                                    <figcaption>
+                                        <h3>Kiev</h3>
+                                        
+                                        <a href="#">Take a look</a>
+                                    </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                                <figure>
+                                    <img src="images/01.jpg" alt="img01">
+                                    <figcaption>
+                                        <h3>Kiev</h3>
+                                        
+                                        <a href="#">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="images/02.jpg" alt="img02">
+                                    <div class="wrap">
+                                        <span class="ribbon">Скидка 10%</span>
+                                    </div>
+          
+                                    <figcaption>
+                                        <h3>Kiev</h3>
+                                        
+                                        <a href="#">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="images/05.jpg" alt="img05">
+                                    <figcaption>
+                                        <h3>Kiev</h3>
+                                        
+                                        <a href="#">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="images/03.jpg" alt="img03">
+          
+                                    <figcaption>
+                                        <h3>Kiev</h3>
+                                        
+                                        <a href="#">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="images/06.jpg" alt="img06">
+                                    <figcaption>
+                                        <h3>Kiev</h3>
+                                        
+                                        <a href="#">Take a look</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                  </div><!-- /container -->
+          
+            
+                </div>
+                </div>
+              </section>
+    
+
+ 
+ <!-- Footer -->
+ <footer class="footer"  id="footer">
+    <article class="container">
+      <div class="col-3">
+        <h3>Accumsan</h3>
+        <ul>
+          <li><a href="#">Nascetur nunc varius</a></li>
+          <li><a href="#">Vis faucibus sed tempor</a></li>
+          <li><a href="#">Massa amet lobortis vel</a></li>
+          <li><a href="#">Nascetur nunc varius</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h3>Faucibus</h3>
+        <ul>
+          <li><a href="#">Nascetur nunc varius</a></li>
+          <li><a href="#">Vis faucibus sed tempor</a></li>
+          <li><a href="#">Massa amet lobortis vel</a></li>
+          <li><a href="#">Nascetur nunc varius</a></li>
+        </ul>
+      </div>
+    
+      <div class="col-5">
+        <h2>Aliquam Interdum</h2>
+        <p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
+        <ul class="social-links">
+          <li><a href="#"><i class="fa fa-twitter-square"></i><span class="icolabel"> Twitter</span></a></li>
+          <li><a href="#"><i class="fa fa-facebook-square"></i><span class="icolabel"> Facebook</span></a></li>
+          <li><a href="#"><i class="fa fa-pinterest-square"></i><span class="icolabel"> Pinterest</span></a></li>
+        </ul>
+      </div>
+    
+      <ul class="copyright">
+          <li>Copyright &copy; 2019 Copyright Holder All Rights Reserved.</li>
+          <li>Design: <a href="#">TEMPLATED</a></li>
+          <li>Images: <a href="#">PAINTER</a></li>
+      </ul>
+    </article>
+  </footer>
+ 
+  </body>
+</html>      

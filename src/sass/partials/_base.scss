@@ -1,0 +1,84 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+html {
+  font-size: 1rem;
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 160px; /* Margin bottom by footer height */
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Custom page CSS */
+      
+.container {
+  width: auto;
+  /* max-width: 900px; */
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+aside {
+  --my-font: Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+/* Content */
+
+section {
+  margin-top: 2em;
+}
+
+/* Wrapper */
+
+.wrapper {
+  margin-bottom: 5em;
+  padding: 5em;
+}
+
+
+/* Containers */
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120rem;
+  width: 90%;
+  overflow: hidden;
+}

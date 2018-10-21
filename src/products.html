@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!-- comments -->
+<html>
+    <head>
+        <title>Peculiar Shopaholic</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+        <style>
+            @import 'https://fonts.googleapis.com/css?family=Raleway:400,800';
+            @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+            @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+            @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+            @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=cyrillic,cyrillic-ext");
+          
+            .nav1 {
+              width: 15%;
+              min-width: 200px;
+              margin: 80px 42.5%;
+              background: #eee; }
+
+            .nav1 ul {
+              list-style: none;
+              padding: 0px; }
+
+            .nav1 li {
+              float: none;
+              width: 100%; }
+
+            .nav1 li a {
+              display: block;
+              padding: 20px;
+              position: relative;
+              z-index: 2;
+              text-decoration: none;
+              color: #444; }
+
+            .nav1 li a:hover { 
+              border-bottom: 0px;
+              color: #fff; }
+
+            .nav1 li:first-child a { border-left: 10px solid #BAC358; }
+            .nav1 li:nth-child(2) a { border-left: 10px solid #62BDCF; }
+            .nav1 li:nth-child(3) a { border-left: 10px solid #E05735; }
+            .nav1 li:nth-child(4) a { border-left: 10px solid #af821b; }
+            .nav1 li:last-child a { border-left: 10px solid #837D63; }
+
+            .nav1 li a:after {
+              content: "";
+              height: 100%;
+              left: 0;
+              top: 0;
+              width: 0px;
+              position: absolute;
+              transition: all 0.3s ease 0s;
+              -webkit-transition: all 0.3s ease 0s;
+              z-index: -1; }
+
+            .nav1 li a:hover:after { width: 100%; }
+            .nav1 li:first-child a:after { background: #BAC358; }
+            .nav1 li:nth-child(2) a:after { background: #62BDCF; }
+            .nav1 li:nth-child(3) a:after { background: #E05735; }
+            .nav1 li:nth-child(4) a:after { background: #af821b; }
+            .nav1 li:last-child a:after { background: #837D63; }
+
+
+
+
+      ul.nav2 {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      ul.nav2 li {
+        float: left;
+        padding: 0;
+        background-color: darkslateblue;
+        position: relative;
+        margin-left: none;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+      }
+      ul.nav2 li:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        background-color: transparent;
+        height: 100%;
+        width: 0;
+        top: 0;
+        transition: all 0.5s ease;
+      }
+      ul.nav2 li:nth-child(1) {
+        background-color: lightcoral;
+      }
+      ul.nav2 li:nth-child(1):hover:after {
+        background-color: #eb5252;
+        width: 100%;
+      }
+      ul.nav2 li:nth-child(2) {
+        background-color: darkseagreen;
+      }
+      ul.nav2 li:nth-child(2):hover:after {
+        background-color: #6fa96f;
+        width: 100%;
+        left: 0;
+      }
+      ul.nav2 li:nth-child(3) {
+        background-color: skyblue;
+      }
+      ul.nav2 li:nth-child(3):hover:after {
+        background-color: #5bbce4;
+        width: 100%;
+      }
+      ul.nav2 li:nth-child(4) {
+        background-color: orange;
+      }
+      ul.nav2 li:nth-child(4):hover:after {
+        background-color: #cc8400;
+        width: 100%;
+      }
+      ul.nav2 li a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 3em 0;
+        color: white;
+        position: relative;
+        z-index: 10;
+      }
+        
+        </style>
+    </head>
+    <body>
+        <nav class="nav-wrapper">
+                <label class='label' for="menu-trigger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <input type="checkbox" id="menu-trigger" /> 
+            <div class="row">    		            
+                <ul id="nav" class="nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="has-children"><a href="products.html">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>	
+                    <li class="has-children"><a href="blog.html">Blog</a></li>	
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> <!-- end nav -->			   	 
+            </div> 
+        </nav> <!-- end nav-wrap --> 	
+        <hr>
+
+        <div class="content-wrapper">
+
+                <div class="row">
+        
+                    <main class="columns col-12">
+
+       
+        
+                      <h1 id="anim1">CSS animated menu</h1>
+
+                      
+        
+                    </main> <!-- end main -->
+        
+        
+        
+                </div> <!-- end row -->
+        
+            </div> <!-- end content-wrap -->
+    
+ <!-- Footer -->
+ <footer class="footer"  id="footer">
+        <article class="container">
+          <div class="col-3">
+            <h3>Accumsan</h3>
+            <ul>
+              <li><a href="#">Nascetur nunc varius</a></li>
+              <li><a href="#">Vis faucibus sed tempor</a></li>
+              <li><a href="#">Massa amet lobortis vel</a></li>
+              <li><a href="#">Nascetur nunc varius</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Faucibus</h3>
+            <ul>
+              <li><a href="#">Nascetur nunc varius</a></li>
+              <li><a href="#">Vis faucibus sed tempor</a></li>
+              <li><a href="#">Massa amet lobortis vel</a></li>
+              <li><a href="#">Nascetur nunc varius</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-5">
+            <h2>Aliquam Interdum</h2>
+            <p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
+            <ul class="social-links">
+              <li><a href="#"><i class="fa fa-twitter-square"></i><span class="icolabel"> Twitter</span></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square"></i><span class="icolabel"> Facebook</span></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-square"></i><span class="icolabel"> Pinterest</span></a></li>
+            </ul>
+          </div>
+        
+          <ul class="copyright">
+              <li>Copyright &copy; 2019 Copyright Holder All Rights Reserved.</li>
+              <li>Design: <a href="#">TEMPLATED</a></li>
+              <li>Images: <a href="#">PAINTER</a></li>
+          </ul>
+        </article>
+      </footer>
+     
+        
+    </body>
+</html>

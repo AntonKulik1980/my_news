@@ -1,0 +1,45 @@
+$tag-color: (
+    html: #39ADD1,
+    css: #3079AB,
+    js: #982551,
+    ruby: #E15258,
+    rails: scale-color(#E15258, $lightness: 22%),
+    sass: #CC6699,
+    foundation: #074E68,
+    mongo: #52AC43
+);
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    text-align: center;
+    li {
+      width: 50%;
+    }
+    
+    @media screen and (min-width: 481px) {
+      li { 
+        width: 25%;
+      }
+    }
+}
+  
+.tag-block {
+      color: white;
+      display: block;
+      padding: .8rem 1rem;
+      &:hover {
+        transform: scale(1.1)
+      }
+      @each $tag, $color in $tag-color {
+        &--#{$tag} {
+          background: $color;
+          transition: .2s;
+          &:hover {
+            background: lighten($color, 4%);
+          }
+        }
+      }
+}

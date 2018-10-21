@@ -1,0 +1,30 @@
+.banner {
+    background-color: #666666;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #d8d8d8;
+    padding: 14em 0;
+    text-align: center;
+    position: relative;
+    background-image: url("/images/1.jpg");
+}
+  
+.banner h2.logo {
+    color: #fff;
+    font-size: 3.5em;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+  
+.banner p {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 2em;
+}
+  
+.banner p a {
+    color: #ffffff;
+    text-decoration: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!-- comments -->
+<html>
+    <head>
+        <title>Peculiar Shopaholic</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <style>
+           body { padding: 30px; }
+
+          .navg li{
+              display: inline-block;
+          }
+          .navg li a {
+              text-decoration: none;
+              color: white;
+              background:red;
+              padding: 1em;
+          }
+        
+        </style>
+    </head>
+    <body>
+        <nav class="nav-wrapper">
+                <label class='label' for="menu-trigger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <input type="checkbox" id="menu-trigger" /> 
+            <div class="row">    		            
+                <ul id="nav" class="nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="has-children"><a href="products.html">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>	
+                    <li class="has-children"><a href="blog.html">Blog</a></li>	
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> <!-- end nav -->			   	 
+            </div> 
+        </nav> <!-- end nav-wrap --> 	
+        <hr>
+
+        <section class="wrapper container special">
+       
+
+            <h1>Gallery</h1>
+
+            <ul class="navg">
+                  <li><a href="#" id="img1" onclick="changeImg(1);">Image 1</a></li>
+                  <li><a href="#" id="img2" onclick="changeImg(2);">Image 2</a></li>
+                  <li><a href="#" id="img3" onclick="changeImg(3);">Image 3</a></li>
+            </ul>
+            
+              <div id="pic">
+                  <img src="images/cat1.jpg" />
+              </div>
+            
+            </div>
+            
+            <script>
+                function changeImg(i){
+                     var pic = document.getElementById("pic");
+                     pic.innerHTML = '<img src="/images/cat'+i+'.jpg" />';
+                    }
+            </script>
+
+          
+        </section> <!-- end content-wrap -->
+    
+ <!-- Footer -->
+ <footer>
+    <p class="copyright"> &copy; 2019 Janus Site</p>
+    <nav>
+        <!--brand icon-->
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github-square"></i></a>
+        <a href="#"><i class="fab fa-youtube-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </nav>
+</footer>
+        
+     
+        
+    </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<!-- comments -->
+<html>
+    <head>
+        <title>Peculiar Shopaholic</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <style>
+           body { padding: 30px; }
+
+          .navg li{
+              display: inline-block;
+          }
+          .navg li a {
+              text-decoration: none;
+              color: white;
+              background:red;
+              padding: 1em;
+          }
+        
+        </style>
+    </head>
+    <body>
+        <nav class="nav-wrapper">
+                <label class='label' for="menu-trigger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <input type="checkbox" id="menu-trigger" /> 
+            <div class="row">    		            
+                <ul id="nav" class="nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="has-children"><a href="products.html">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>	
+                    <li class="has-children"><a href="blog.html">Blog</a></li>	
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> <!-- end nav -->			   	 
+            </div> 
+        </nav> <!-- end nav-wrap --> 	
+        <hr>
+
+        <section class="wrapper container special">
+       
+
+            <h1>Calc</h1>
+
+            <form>
+                <input type="text" id="res" value="">
+                <br>
+                <input type="button" value="0" id="b0">
+                <input type="button" value="1" id="b1">
+                <input type="button" value="2" id="b2">
+                <br>
+                <input type="button" value="3" id="b3">
+                <input type="button" value="4" id="b4">
+                <input type="button" value="5" id="b5">
+                <br>
+                <input type="button" value="6" id="b6">
+                <input type="button" value="7" id="b7">
+                <input type="button" value="8" id="b8">
+                <br>
+                <input type="button" value="9" id="b9">
+                <input type="button" value="+" id="plus">
+                <input type="button" value="=" id="equal">
+                <input type="button" value="-" id="minus">
+                <input type="button" value="/" id="dev">
+                <input type="button" value="C" id="clear">    
+                </form>
+                <script type="text/javascript">
+                    var a, b;
+                    
+                    b2.onclick = function(){
+                     if (a===undefined){
+                        res.value = b2.value;
+                        a = parseInt(b2.value);
+                     }else{
+                        res.value += b2.value;
+                        b = parseInt(b2.value);
+                     }
+                    }
+                
+                    b3.onclick = function(){
+                     if (a===undefined){
+                        res.value = b3.value;
+                        a = parseInt(b3.value);
+                     }else{
+                        res.value += b3.value;
+                        b = parseInt(b3.value);
+                     }
+                    }
+
+                    b1.onclick = function(){
+                     if (a===undefined){
+                        res.value = b1.value;
+                        a = parseInt(b1.value);
+                     }else{
+                        res.value += b1.value;
+                        b = parseInt(b1.value);
+                     }
+                    }
+
+                     b4.onclick = function(){
+                     if (a===undefined){
+                        res.value = b4.value;
+                        a = parseInt(b4.value);
+                     }else{
+                        res.value += b4.value;
+                        b = parseInt(b4.value);
+                     }
+                    }
+                    b5.onclick = function(){
+                     if (a===undefined){
+                        res.value = b5.value;
+                        a = parseInt(b5.value);
+                     }else{
+                        res.value += b5.value;
+                        b = parseInt(b5.value);
+                     }
+                    }
+
+                    b6.onclick = function(){
+                     if (a===undefined){
+                        res.value = b6.value;
+                        a = parseInt(b6.value);
+                     }else{
+                        res.value += b6.value;
+                        b = parseInt(b6.value);
+                     }
+                    }
+                    b7.onclick = function(){
+                     if (a===undefined){
+                        res.value = b7.value;
+                        a = parseInt(b7.value);
+                     }else{
+                        res.value += b7.value;
+                        b = parseInt(b7.value);
+                     }
+                    }
+
+                    b8.onclick = function(){
+                     if (a===undefined){
+                        res.value = b8.value;
+                        a = parseInt(b8.value);
+                     }else{
+                        res.value += b8.value;
+                        b = parseInt(b8.value);
+                     }
+                    }
+                    b9.onclick = function(){
+                     if (a===undefined){
+                        res.value = b9.value;
+                        a = parseInt(b9.value);
+                     }else{
+                        res.value += b9.value;
+                        b = parseInt(b9.value);
+                     }
+                    }
+                    b0.onclick = function(){
+                     if (a===undefined){
+                        res.value = b0.value;
+                        a = parseInt(b0.value);
+                     }else{
+                        res.value += b0.value;
+                        b = parseInt(b0.value);
+                     }
+                    }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    // b3.onclick = function(){
+                    //     res.value += b3.value;
+                    //     b = parseInt(b3.value);
+                    // }
+                
+                    plus.onclick = function(){
+                        res.value += plus.value;
+                
+                    }
+
+                    minus.onclick = function(){
+                        res.value += minus.value;}
+
+                    equal.onclick = function(){
+                        res.value = a+b;
+                        res.value = a-b;
+                        a = undefined;
+                        b = undefined;
+                    }
+                    clear.onclick = function(){
+                        res.value = ' ';}
+                    
+                    
+                
+                </script>
+          
+        </section> <!-- end content-wrap -->
+        
+ <!-- Footer -->
+ <footer>
+    <p class="copyright"> &copy; 2019 Janus Site</p>
+    <nav>
+        <!--brand icon-->
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github-square"></i></a>
+        <a href="#"><i class="fab fa-youtube-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </nav>
+</footer>
+        
+     
+        
+    </body>
+</html>
